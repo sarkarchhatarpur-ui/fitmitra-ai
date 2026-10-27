@@ -1,0 +1,6 @@
+{
+  "name": "FitMitra AI — Personal Fitness & Nutrition Coach",
+  "description": "Personalized workout planner, Indian-friendly diet planner, exercise tutorials, progress tracker, and AI fitness coach tailored to your body, goals, and equipment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
