@@ -1,3 +1,4 @@
+
 name: Deploy FitMitra AI
 
 on:
@@ -22,8 +23,9 @@ jobs:
         env:
           FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
-     - name: Install dependencies
-       run: npm install
+      - name: Install dependencies
+        run: npm install
+
       - name: Build project
         run: npm run build
 
@@ -38,15 +40,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        env:
-          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
           name: build-files
           path: dist/
-
-      # Keep your existing deployment steps here
